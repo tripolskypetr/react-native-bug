@@ -1,4 +1,4 @@
-import { ScrollView, Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
 import { TextInput } from 'react-native-paper';
 
@@ -34,119 +34,117 @@ const FieldWrapper = ({
 
 export default function App() {
   return (
-    <ScrollView>
-      <NoBaseline>
-        <FieldWrapper style={{ width: '100%', height: 125, justifyContent: 'center' }}>
-          <Text>Group 1</Text>
+    <NoBaseline style={{ flexGrow: 1 }}>
+      <FieldWrapper style={{ width: '100%', height: 125, justifyContent: 'center' }}>
+        <Text>Group 1</Text>
+      </FieldWrapper>
+      
+      <WithBaseline style={{ width: '100%' }}>
+        <FieldWrapper style={{ width: '25%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
         </FieldWrapper>
-        
-        <WithBaseline style={{ width: '100%' }}>
-          <FieldWrapper style={{ width: '25%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-          <FieldWrapper style={{ width: '25%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-          <FieldWrapper style={{ width: '25%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-          <FieldWrapper style={{ width: '25%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-        </WithBaseline>
-        <FieldWrapper style={{ width: '100%', height: 125, justifyContent: 'center' }}>
-          <Text>Group 2</Text>
+        <FieldWrapper style={{ width: '25%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
         </FieldWrapper>
-        <WithBaseline style={{ width: '100%' }}>
-          <FieldWrapper style={{ width: '33%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-          <FieldWrapper style={{ width: '33%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-          <FieldWrapper style={{ width: '33%' }}>
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-            <TextInput
-              label="Email"
-            />
-          </FieldWrapper>
-        </WithBaseline>
-      </NoBaseline>
-    </ScrollView>
+        <FieldWrapper style={{ width: '25%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+        </FieldWrapper>
+        <FieldWrapper style={{ width: '25%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+        </FieldWrapper>
+      </WithBaseline>
+      <FieldWrapper style={{ width: '100%', height: 125, justifyContent: 'center' }}>
+        <Text>Group 2</Text>
+      </FieldWrapper>
+      <WithBaseline style={{ width: '100%' }}>
+        <FieldWrapper style={{ width: '33%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+        </FieldWrapper>
+        <FieldWrapper style={{ width: '33%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+        </FieldWrapper>
+        <FieldWrapper style={{ width: '33%' }}>
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+          <TextInput
+            label="Email"
+          />
+        </FieldWrapper>
+      </WithBaseline>
+    </NoBaseline>
   );
 }
 
